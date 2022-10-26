@@ -1,5 +1,5 @@
 # lisanlab
 离散数学LAB
 
-
-/A=﹁( p v q ) ^ ( (p v r) v s)
+表达式：
+A=﹁( p v q ) ^ ( (p v r) v s)
