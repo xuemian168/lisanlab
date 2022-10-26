@@ -1,4 +1,4 @@
-# lisanlab
+# lisanlab 离散数学LAB
 离散数学LAB
 
 表达式：
