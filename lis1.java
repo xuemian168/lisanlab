@@ -1,5 +1,7 @@
 package lisan1;
 
+//A=﹁( p v q ) ^ ( (p v r) v s)
+
 import java.util.*;
 
 public class lis2 {
@@ -23,25 +25,28 @@ public class lis2 {
         q = sc.nextInt();
         r = sc.nextInt();
         s = sc.nextInt();
-        System.out.println("结果为："+calc(p,q,r,s));
+        System.out.println("结果为：" + calc(p, q, r, s));
     }
 
     public static boolean calc(int p, int q, int r, int s) {
         int temp1, temp2;
         if (p + q + r + s > 4) {
-            System.out.println("输入结果格式化为1111");
+            System.out.println("输入错误，非0格式化为1");
         }
         if (p == 0 && q == 0) {
-            temp1 = 0;
-        } else {
             temp1 = 1;
+        } else {
+            temp1 = 0;
         }
-        temp1 = temp1 ^ 1;
         if (p != 0 || r != 0) {
             temp2 = 1;
         } else {
             temp2 = 0;
         }
+        if (temp2 == 0 && s == 0){
+            temp2 = 0;}
+        else{
+            temp2 = 1;}
         if (temp1 == 1 && temp2 == 1) {
             return true;
         } else {
